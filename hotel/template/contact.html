@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% block nav %} {% include 'navbar/page_nav.html' %} {% endblock %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block main %}
+
+		<!-- PAGE HEADING -->
+		<div class="impx-page-heading uk-position-relative act">
+			<div class="impx-overlay dark"></div>
+			<div class="uk-container">
+				<div class="uk-width-1-1">
+					<div class="uk-flex uk-flex-left">
+						<div class="uk-light uk-position-relative uk-text-left page-title">
+							<h1 class="uk-margin-remove">Contact Us</h1><!-- page title -->
+							<p class="impx-text-large uk-margin-remove">Talk to our customer care</p><!-- page subtitle -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- PAGE HEADING END -->
+
+
+
+{% include 'footer/contact_main.html' %}
+{% endblock %}

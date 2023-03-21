@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+	<head>
+
+        <!-- Standard Meta -->
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Site Properties -->
+        <title>Eberhard Hotel and Suites</title>
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="{% static 'images/apple-touch-icon.png' %}">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/uikit.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/tiny-date-picker.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/media-query.css' %}" />
+
+        <!-------- custom css -------->
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+
+    </head>
+
+    <body class="impx-body" id="top">
+        {% block nav %}
+    	{% include 'navbar/nav.html' %}
+        {% endblock %}
+
+		<!------------------ =============== Block main is here ====================== -->
+        {% block main %}
+
+        {% endblock %}
+        <!------------- ================= End block main is here ================= ------------------>
+        {% include 'footer/footer.html' %}
+
+    	<!-- Javascript -->
+    	<script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/uikit.min.js' %}"></script>
+        <script src="{% static 'js/uikit-icons.min.js' %}"></script>
+<!--        <script src="{% static 'js/tiny-date-picker.min.js' %}"></script>-->
+        <script src="{% static 'js/jquery.parallax.min.js' %}"></script>
+<!--        <script src="{% static 'js/date-config.js' %}"></script>-->
+    </body>
+
+
+</html>

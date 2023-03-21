@@ -1,0 +1,11 @@
+.book-title, .uk-form-controls .label-form,
+.uk-form-controls .uk-form-icon, .uk-form-controls > .uk-input,
+.impx-hp-booking-form .uk-input:focus {
+    color: #000;
+}
+
+@media (max-width: 350px) {
+    .uk-card-body .room-name {
+        font-size: 15px;
+    }
+}
